@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Visual Regression Testing</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/script.js"></script>
+		<script src="js/colors.js"></script>
+		<link href="css/styles.css" type="text/css" rel="stylesheet">
+	</head>
+  	<body> 
+		<div class="container text-center">
+				<div class="row col-sm-12" id ="colors-viewer">
+
+					<div class="col-sm-12"><br></div>
+					<div class="col-sm-12  text-left"><h2> Paleta de colores </h2> </div>
+					<div class="col-sm-12"><br></div>
+
+					<div class="row justify-content-between col-sm-12 ">
+						<div class="col-sm-1 alert"></div>
+						<div class="col-sm-2 alert" id="color1">
+							<strong>
+								Fondo p&aacute;gina
+							</strong>
+						</div>
+						<div class="col-sm-2 alert" id="color2">
+							<strong>
+								Texto elementos
+							</strong>
+						</div>
+						<div class="col-sm-2 alert" id="color3">
+							<strong>
+								Borde elementos
+							</strong>
+						</div>
+						<div class="col-sm-2 alert" id="color4">
+							<strong>
+								Fondo elementos
+							</strong>
+						</div>
+						<div class="col-sm-2 alert" id="color5">
+							<strong>
+								Texto encabezado
+							</strong>
+						</div>
+						<div class="col-sm-1 alert"></div>
+					</div>
+				</div>
+			
+				
+				<div class="col-sm-12  text-left"><h2> Reglas CSS </h2> </div>
+				<div class="col-sm-12"><br></div>
+				<div class="col-sm-12" id ="css-rules-div">
+				
+					<textarea id="css-rules" class="rules"> 
+						.website-background{ color: #FFFFFF;}				
+						.element-text{ color: #FFFFFF;}				
+						.element-border{ border-color: #FFFFFF;}				
+						.element-background{ background-color: #FFFFFF;}				
+						.header{ color: #FFFFFF;}
+					</textarea>
+				</div>
+			
+
+			<div class="row col-md-12" id="actions">			 
+					<button type="button" class="btn btn-success" id='generate' onclick="generateRules()">Generar nueva paleta</button>
+					<button type="button" class="btn btn-warning" id='clean' onclick="clean()"> Limpiar paleta</button>
+				</div> 
+			</div>
+		</div>
+	</body>
+</html>
